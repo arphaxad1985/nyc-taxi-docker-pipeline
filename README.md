@@ -28,9 +28,9 @@ A Dockerised data ingestion pipeline that loads NYC taxi trip data into PostgreS
 | `docker-compose.yaml` | Postgres + pgAdmin + ingestion service |
 
 ## How to run
+![pgAdmin Query Results](assets/nytaxidata.png)
 
 ### 1. Start the database and pgAdmin
-![pgAdmin Query Results](assets/nytaxidata.png)
 
 ```bash
 1. ## Start PostgreSQL and pgAdmin in the background:
