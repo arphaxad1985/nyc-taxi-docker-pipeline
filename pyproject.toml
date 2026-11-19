@@ -1,0 +1,38 @@
+[project]
+name = "pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arphaxad1985", email = "arphaxadnguka@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.0",
+    "fastparquet>=2026.9.0",
+    "pandas>=3.0.6",
+    "psycopg[binary,pool]>=3.3.6",
+    "sqlalchemy>=2.1.6",
+    "tdqm>=0.0.1",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+pipeline = "pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "pipeline"
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pgcli>=4.7.1",
+]
+
+[tool.uv]
+package = false
